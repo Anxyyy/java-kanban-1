@@ -143,7 +143,7 @@ public class InMemoryTaskManager implements TaskManager {
     @Override
     public void updateEpic(Epic epic) { //обновление эпиков
         Epic saved = epics.get(epic.getId());
-        if(saved == null){
+        if (saved == null) {
             return;
         }
 
