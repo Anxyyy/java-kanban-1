@@ -19,9 +19,6 @@ public class Epic extends Task {
     }
 
     public void addTask(SubTask subTask) {
-        if (subTask.getEpic() == this) {
-            throw new IllegalArgumentException("Эпик не может содержать себя в качестве подзадачи.");
-        }
         this.subTask.add(subTask);
     }
 
